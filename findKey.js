@@ -29,10 +29,10 @@ assertEqual(result, "noma");
 
 const result2  = findKey({
   "Los Cabos": { stars: 4 },
-  "Vallerta":   { stars: 5 },
-  "Veracruz":      { stars: 2 },
-  "Cancun":   { stars: 3 },
-  "Cuidad Carmen":       { stars: 2 },
+  "Vallerta":  { stars: 5 },
+  "Veracruz":  { stars: 2 },
+  "Cancun":    { stars: 3 },
+  "Cd Carmen": { stars: 2 },
   "Acapulco":  { stars: 3 }
 }, x => x.stars === 5);
 
