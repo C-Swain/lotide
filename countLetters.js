@@ -17,4 +17,3 @@ const countLetters = function(str) {
   return results;
 };
 
-console.log(countLetters("the quick brownfox jumped over the lazy dog"));
