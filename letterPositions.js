@@ -1,22 +1,3 @@
-const eqArrays = function (actual, expected){
-  let match = true
-  for(let i =0; i < actual.length; i ++){
-  if (actual[i] !== expected[i]) {
-    match = false   
-  }  
-} return match
-};
-
-
-const assertArraysEqual = function(actual, expected) {
-  let equivalentArrays = eqArrays(actual, expected);
-  if (equivalentArrays === true) {
-    console.log(`😸Assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑  Assertion failed: ${actual} !== ${expected}`);
-  }
-}; 
-
 
 const letterPositions = function(sentence) {
 // a place to store  results 
@@ -38,8 +19,4 @@ else
 
 
 
-testResult = letterPositions("hello");
-assertArraysEqual(testResult["h"], [0]);
-assertArraysEqual(testResult["e"], [1]);
-assertArraysEqual(testResult["l"], [2, 3]);
-assertArraysEqual(testResult["o"], [4]);
+module.exports = letterPositions;
